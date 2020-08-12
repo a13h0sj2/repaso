@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/a13h0sj2/repaso#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.28"
   }
 }
