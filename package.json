@@ -1,0 +1,23 @@
+{
+  "name": "repaso",
+  "version": "1.0.0",
+  "description": "un repaso de lo hecho hasta hoy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a13h0sj2/repaso.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a13h0sj2/repaso/issues"
+  },
+  "homepage": "https://github.com/a13h0sj2/repaso#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
