@@ -1,7 +1,7 @@
 {
     "version":2,
     "name":"repaso",
-    "route":[
+    "routes":[
         {"src":"/api/(.*)","dest":"/api/index.js"}
     ]
 }
