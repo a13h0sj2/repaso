@@ -1,9 +1,9 @@
-const express =  requiere('express');
-const mongoose = requiere('mongoose');
-const bodyParser = requiere('body-parser')
-const cors = requiere('cors')
-const meals = requiere('./routes/meals')
-const orders = requiere('./routes/orders')
+const express =  require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const meals = require('./routes/meals')
+const orders = require('./routes/orders')
 
 const app = express()
 app.use(bodyParser.json())
