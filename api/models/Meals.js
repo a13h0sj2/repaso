@@ -1,8 +1,8 @@
-import { Schema as _Schema, model } from 'mongoose';
-const Schema = _Schema;
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
-const Meals = model('Order', new Schema({
+const Meals = mongoose.model('Meal', new Schema({
    name:String,
-   desc:String,
+   desc:String
 }))
-export default Meals;
+module.exports = Meals
