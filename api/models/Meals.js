@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = requiere('mongoose')
 const Schema = mongoose.Schema
 
 const Meals = mongoose.model('Meal', new Schema({
