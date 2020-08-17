@@ -14,8 +14,7 @@ const pruebaC = mongoose.model('User', new mongoose.Schema({name:String}))
 pruebaC.create({name:'entro'})
 app.get('*',(req,res)=>{
     pruebaC.find()
-    .then(x=>res.send(x),
-
+    .then(x=>res.send(x))
 })
 
 app.use('/api/meals',meals)
