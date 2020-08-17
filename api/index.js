@@ -15,11 +15,6 @@ mongoose.connect(process.env.MONGODB_URI,{
     useFindAndModify:false
 });
 
-app.get('*',(req,res)=>{
-    pruebaC.find()
-    .then(x=>res.send(x))
-})
-
 app.use('/api/meals',meals)
 app.use('/api/orders',orders)
     
