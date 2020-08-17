@@ -14,8 +14,6 @@ mongoose.connect(process.env.MONGODB_URI,{
     useUnifiedTopology:true,
     useFindAndModify:false
 });
-const pruebaC = mongoose.model('User', new mongoose.Schema({name:String}))
-pruebaC.create({name:'otra vez'})
 
 app.get('*',(req,res)=>{
     pruebaC.find()
