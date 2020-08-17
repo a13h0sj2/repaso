@@ -10,7 +10,7 @@
   })
 
   router.get('/:id',(req,res)=>{
-    Meals.findById(req.param.id)
+    Meals.findById(req.params.id)
     .exec()
     .then(x=>res.status(200).send(x))
   })
@@ -26,7 +26,7 @@
   })
 
   router.delete('/:id',(req,res)=>{
-    Meals.findOneAndDelete(req.param.id)
+    Meals.findOneAndDelete(req.params.id)
     .exec()
     .then(()=>res.sendStatus(204))
   })

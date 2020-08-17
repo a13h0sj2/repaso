@@ -10,7 +10,7 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/:id',(req,res)=>{
-  Orders.findById(req.param.id)
+  Orders.findById(req.params.id)
   .exec()
   .then(x=>res.status(200).send(x))
 })
@@ -26,7 +26,7 @@ router.put('/:id',(req,res)=>{
 })
 
 router.delete('/:id',(req,res)=>{
-  Orders.findOneAndDelete(req.param.id)
+  Orders.findOneAndDelete(req.params.id)
   .exec()
   .then(()=>res.sendStatus(204))
 })
