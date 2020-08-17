@@ -1,5 +1,6 @@
   const express = require('express');
   const Meals = require('../models/Meals');
+  
 
   const router = express.Router()
 
@@ -7,6 +8,7 @@
     Meals.find()
     .exec()
     .then(x=>res.status(200).send(x))
+    console.log('hecho')
   })
 
   router.get('/:id',(req,res)=>{
