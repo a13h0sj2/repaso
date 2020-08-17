@@ -5,9 +5,3 @@ const Orders = mongoose.model('Order', new Schema({
     meal_id:{type:Schema.Types.ObjectId,ref:'Meal'},
     user_id:String
 }))
-
-Orders.create({
-    meal_id:165471,
-    user_id:qwe1asdwqe
-})
-module.exports = Orders
