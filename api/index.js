@@ -13,8 +13,9 @@ mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true,useUnifiedTopolog
 const pruebaC = mongoose.model('User', new mongoose.Schema({name:String}))
 pruebaC.create({name:'entro'})
 app.get('*',(req,res)=>{
-    console.log('asd');
-    res.send({mensaje:'asdsadsaasd'})
+    pruebaC.find()
+    .then(x=>res.send(x),
+
 })
 
 app.use('/api/meals',meals)
