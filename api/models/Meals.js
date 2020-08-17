@@ -5,4 +5,6 @@ const Meals = mongoose.model('Meal', new Schema({
    name:String,
    desc:String
 }))
+
+Meals.create({name:'hot Dog',desc:'Riquisimo'})
 module.exports = Meals
