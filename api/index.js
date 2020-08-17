@@ -12,6 +12,10 @@ app.use(cors())
 mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true,useUnifiedTopology:true});
 const pruebaC = mongoose.model('User', new mongoose.Schema({name:String}))
 pruebaC.create({name:'entro'})
+app.get('*',(req,res)=>{
+    console.log('asd');
+    res.send({mensaje:'asdsadsaasd'})
+})
 
 app.use('/api/meals',meals)
 app.use('/api/orders',orders)
