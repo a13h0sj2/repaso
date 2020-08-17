@@ -9,9 +9,14 @@ const app = express()
 app.use(bodyParser.json())
 app.use(cors())
 
-mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:false});
+mongoose.connect(process.env.MONGODB_URI,{
+    useNewUrlParser:true,
+    useUnifiedTopology:true,
+    useFindAndModify:false
+});
 const pruebaC = mongoose.model('User', new mongoose.Schema({name:String}))
 pruebaC.create({name:'otra vez'})
+
 app.get('*',(req,res)=>{
     pruebaC.find()
     .then(x=>res.send(x))
