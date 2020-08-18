@@ -8,7 +8,7 @@
     Meals.find()
     .exec()
     .then(x=>res.status(200).send(x))
-    console.log('hecho')
+    console.log('hecho get /')
   })
 
   router.get('/:id',(req,res)=>{
