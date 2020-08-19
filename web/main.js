@@ -1,11 +1,15 @@
-const { json } = require("body-parser");
-
 //renderizar los items traidos de meals
 const renderItem = (item) => {
-    return `<li data-id="${item._id}">${item.name}</li>`
+    //tomamos el id desde item de la variable data de la funcion fetch y el nombre del meal
+    return `<li user_id="Ricardo" meal_id="${item._id}" onclick="">${item.name}</li>`
+}
+const pedidoMenu = (usuario,meal)=>{
+    
 }
 
 window.onload=()=>{
+
+
 
     // Enviando peticion de json de meals
     fetch('https://repaso-git-master.a13h0sj2.vercel.app/api/meals')
